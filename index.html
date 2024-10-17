@@ -56,7 +56,7 @@
             </li>
           </ul>
         </address>
-        <button class="burger-btn" type="button" data-menu-open>
+        <button class="burger-btn js-open-menu" type="button">
           <svg class="burger-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger"></use>
           </svg>
@@ -64,9 +64,9 @@
       </div>
 
       <!-- MOBILE MENU -->
-      <div class="mobile-menu" data-menu>
+      <div class="mobile-menu js-menu-container">
         <div class="container mobile-menu-container">
-          <button class="close-menu-btn" type="button" data-menu-close>
+          <button class="close-menu-btn js-close-menu" type="button">
             <svg class="close-menu-btn-icon" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
@@ -74,8 +74,8 @@
 
           <nav class="mobile-menu-nav">
             <a class="mobile-menu-nav-link current" href="">Studio</a>
-            <a class="mobile-menu-nav-link" href="">Portfolio</a>
-            <a class="mobile-menu-nav-link" href="">Contacts</a>
+            <a class="mobile-menu-nav-link mobile-modal-link" href="#portfolio">Portfolio</a>
+            <a class="mobile-menu-nav-link mobile-modal-link" href="#contacts">Contacts</a>
           </nav>
 
           <address class="mobile-menu-contacts">
@@ -373,7 +373,7 @@
       </section>
 
       <!-- OUR PORTFOLIO -->
-      <section class="portfolio-description section">
+      <section class="portfolio-description section" id="portfolio">
         <div class="container">
           <h2 class="portfolio-description-title">Our Portfolio</h2>
           <ul class="portfolio-description-list">
@@ -640,7 +640,7 @@
     </main>
 
     <!-- PAGE FOOTER-->
-    <footer class="page-footer section">
+    <footer class="page-footer section" id="contacts">
       <div class="container page-footer-container">
         <div class="logo-text">
           <a class="logo footer-logo" href="./index.html"> Web<span class="footer-logo-accent">Studio</span> </a>
@@ -771,5 +771,11 @@
     </div>
     <script src="./js/modal.js" type="module"></script>
     <script src="./js/menu.js" type="module"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
